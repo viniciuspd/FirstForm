@@ -1,0 +1,296 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    height: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: rgb(30,30,30);
+}   
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titulo_header{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 20px;  
+}
+
+.titulo_header h1{
+    flex: 1;
+    color: rgb(200, 200, 200);
+    font-size: 19px;
+}
+
+.right_header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    background-color: rgb(30,30,30);
+}
+
+.right_header nav ul{
+    display: flex;
+    list-style:none ;
+}
+
+.right_header nav ul a{  
+    text-decoration: none;
+    color: rgb(160,160,160);
+    margin-right: 20px;
+}
+
+.right_header nav ul a:hover{  
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+}
+
+.right_header input[type="search"]{
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.menu_left{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    background-color: rgb(230,230,230);
+
+}
+
+.dados_cadastrais{
+    width: 100%;
+    padding: 30px 50px 30px 30px;
+    
+    display: flex;
+    flex-direction: column;
+    flex:6;
+}
+
+.navegacao{
+    width: 100%;
+}
+
+.navegacao ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navegacao ul a{
+    padding: 20px;
+    display: block;
+    height: 30px;
+    list-style:none;
+    text-decoration: none;
+    color: rgb(54,128,200);
+    text-align: right;
+    font-size: 18px;
+    
+}
+
+
+.navegacao ul a:hover{
+    background-color: rgb(54,128,200);
+    color: #FFFFFF;
+}
+
+.cadastro_alunos{
+    display: flex;
+}
+
+.cadastro_alunos h1{
+    margin-left: 25px;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.linha{
+
+    width: 100%;
+    height: 2px;
+    background-color: rgb(210, 210, 210);
+}
+
+.dados_alunos{
+    margin-top: 15px;
+    display: flex;
+}
+
+.dados_alunos h1{
+    color: rgb(50,50,50);
+    margin-left: 25px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formulario_alunos form{
+    padding: 50px;
+}
+
+ .separar_dados{
+    text-align: right;
+    display: inline-block;
+    margin: 30px;
+    
+ }
+
+ .separar_dados input, .separar_dados select {
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 300px;
+    border-radius: 3px;
+    margin-left: 10px;
+ }
+
+ .separar_dados input[type="tel"],  .separar_dados input[type="date"]{
+    width: 150px;
+ }
+
+.separar_dados span{
+    font-weight: bold;
+}
+
+.botao{
+    text-align: center;
+}
+
+.enviar{
+    margin-right: 20px;
+    width: 70px;
+    height: 35px;
+    padding: 7px;
+    background-color: rgb(0, 111, 223);
+    border:none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.limpar{
+    width: 70px;
+    height: 35px;
+    padding: 7px;
+    background-color: rgb(228, 125, 0);
+    border:none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    outline: none;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: rgb(0, 82, 163);
+}
+
+.limpar:hover{
+    background-color: rgb(145, 80, 0);
+}
+
+.alinhar{
+    display: inline-block;
+    width: 80px;
+    height: auto;
+}
+
+@media (max-width:1000px){
+    .separar_dados{
+        text-align: left;
+        display: block;
+        
+    }
+    
+
+}
+
+@media (max-width:880px){
+    .separar_dados{
+        text-align: left;
+        
+        
+    }
+    .alinhar{
+        display: block;
+
+    }
+
+    .separar_dados input, .separar_dados select{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .separar_dados > span{
+        display: block;
+    }
+
+
+    .separar_dados input, .separar_dados select {
+        width: 200px;
+    }
+
+    .formulario_alunos > form  {
+        padding: 0px;
+    }
+
+
+}
+
+@media (max-width:640px){
+    .corpo .container{
+        flex-direction: column;
+    }
+
+    .navegacao ul a{
+        padding: 20px 20px 40px 20px;
+        display: inline-block;       
+        height: 30px;
+        list-style:none;
+        text-decoration: none;
+        color: rgb(54,128,200);
+        text-align: right;
+        font-size: 18px;
+}
+    .navegacao ul{
+    text-align: center;
+}
+    .titulo_header{
+    display: none;
+}
+
+}
+
+@media (max-width:450px){
+.right_header input{
+    width: 120px;
+    height: 40px;
+    margin: 0px;
+}
+
+
+    
+}
+
+@media (max-width:550px){
+    .right_header nav ul a{  
+        margin-right: 10px;
+    }
+}
+    
